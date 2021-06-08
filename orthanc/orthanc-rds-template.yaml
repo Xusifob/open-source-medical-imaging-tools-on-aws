@@ -117,6 +117,7 @@ Parameters:
     Default: m4.large
     AllowedValues: [
       '',
+      t2.small, t2.medium,
       t2.large, t2.xlarge, t2.2xlarge,
       t3.large, t3.xlarge, t3.2xlarge,
       m4.large, m4.xlarge, m4.2xlarge, m4.4xlarge, m4.8xlarge,
@@ -150,7 +151,8 @@ Parameters:
     Description: Database Instance Class. db.r5 instance classes are supported for Aurora PostgreSQL 10.6 or later. db.t3.medium instance class is supported for Aurora PostgreSQL 10.7 or later.
     Type: String
     AllowedValues: [
-      db.t3.medium,
+      
+      db.t2,medium,db.t3.medium,
       db.r4.large, db.r4.xlarge, db.r4.2xlarge, db.r4.4xlarge, db.r4.8xlarge, db.r4.16xlarge, 
       db.r5.large, db.r5.xlarge, db.r5.2xlarge, db.r5.4xlarge, db.r5.8xlarge, db.r5.12xlarge, db.r5.16xlarge, db.r5.24xlarge
     ]
